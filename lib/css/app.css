@@ -255,7 +255,14 @@ header .nav-item:last-child {
 	font-size: 0.9em;
 	color: rgba(0, 0, 0, 0.5);
   }
-  
+
+.card_pastor{
+	width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+    
+}
   /* Section Team */
 
 .section-4{
@@ -319,11 +326,35 @@ header .nav-item:last-child {
 	opacity: 0.7;
 }
 
+#container_credo{
+	height: 100%;
+    width: -webkit-fill-available;
+    overflow: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/credo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+	opacity: 0.8;
+}
+
 #iead{
 	padding: 13vmin 5vmin 20vmin 10vmin;
 }
 
+#credo{
+	padding: 13vmin 5vmin 20vmin 10vmin;
+}
+
 .container_historia{
+	padding: 13vmin 5vmin;
+	text-align: justify;
+}
+
+.container_credo{
 	padding: 13vmin 5vmin;
 	text-align: justify;
 }

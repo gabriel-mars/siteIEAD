@@ -8,12 +8,10 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/52e5801784.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="../lib/js/jquery.mask.js"></script>
     </head>
 
     <body id="page-top">
-        <header>
+        <header id="container_credo">
             <div class="container-fluid">
                 <!-- Menu -->
                 <nav class="navbar nav-edit navbar-expand-lg fixed-top">
@@ -42,9 +40,9 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mais</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="../pages/credo.html">Nosso credo</a>
+                                        <a class="dropdown-item" href="#">Nosso credo</a>
                                         <hr style="background-color: #6f86d6;" class="dropdown-divider">
-                                        <a class="dropdown-item" href="#">Contato</a>
+                                        <a class="dropdown-item" href="../pages/contato.html">Contato</a>
                                         <hr style="background-color: #6f86d6;" class="dropdown-divider">
                                         <a class="dropdown-item" href="#">Facebook</a>
                                     </div>
@@ -59,72 +57,46 @@
                 <div class="row">
                     <div class="col-md-7 col-sm-12 mx-auto">
                         <h2 style="font-family: Lobster; font-size: 4em; color: whitesmoke;">Igreja Evangélica Assembleia de Deus - IEAD</h2>
-                        <h4 style="font-family: Patua One; font-size:2em; color: whitesmoke;">Deixe aqui seu pedido de oração, crítica ou elogio.</h4>
-                        <h4 style="font-family: Patua One; font-size:2em; color: whitesmoke;">Nós queremos ouvir você!</h4>
+                        <h4 style="font-family: Patua One; font-size:2em; color: whitesmoke;">No que cremos?</h4>
                     </div>
                 </div>
             </div>
         </header>
 
-        <section>
-            <div class="container" data-aos="fade-right">
+        <!-- Botão de rolagem -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-sort-up"></i></button>
+
+        <!-- Sessão história da IEAD no Brasil -->
+        <section id="credo">
+            <div class="container">
                 <div class="row">
-                    <div class="col-xl-8 offset-xl-2 py-5">
-                        <h4 style="font-family: Patua One; font-size:2em; color: black;">Preencha as informações abaixo e logo vamos te responder.</h4>
-                        <form>
-                            <div class="controls">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="form_name">Nome *</label>
-                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Por favor, digite seu nome *" required="required" data-error="É necessário digitar seu nome.">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="form_lastname">Telefone</label>
-                                            <input id="form_scholl" type="text" name="scholl" class="telefone form-control" placeholder="Telefone">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="form_email">E-mail *</label>
-                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Por favor, digite seu e-mail *" required="required" data-error="É necessário digitar seu e-mail.">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="form_message">Mensagem *</label>
-                                            <textarea id="form_message" name="message" class="form-control" placeholder="Por favor, digite sua mensagem *" rows="4" required="required" data-error="Por favor, nos escreva uma mensagem."></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="submit" class="btn btn-primary btn-send" value="Enviar">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <p class="text-muted">
-                                            <strong>*</strong> Estes campos são obrigatórios.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </form> 
+                    <h4 class="col-md-7 col-sm-12 mx-auto" style="font-family: Lobster; font-size: 3em; color: black; text-align: center;">No que cremos?</h4>
+                </div>
+                <div class="row text-center"> 
+                    <div class="container_credo" style="height: 400px; overflow-y: scroll;">
+                        <p>A Assembleia de Deus é uma igreja evangélica pentecostal que prima pela ortodoxia doutrinária. Tendo a Bíblia como a sua única regra de fé e prática, acha-se comprometida com a evangelização do Brasil e do mundo, conformando-se plenamente com as reivindicações da Grande Comissão.</p>
+                        <p>A doutrina que distingue as Assembleias de Deus de outras igrejas diz respeito ao batismo no Espírito Santo. As Assembleias de Deus creem que o batismo no Espírito Santo concede aos crentes vários benefícios como estão registrados no Novo Testamento.</p>
+                        <p>Estes incluem poder para testemunhar e servir aos outros; uma dedicação à obra de Deus; um amor mais intenso por Cristo, sua Palavra, e pelos perdidos; e o recebimento de dons espirituais (Atos 1.4,8; 8.15-17).</p>
+                        <p>As Assembleias de Deus creem que quando o Espírito Santo é derramado, ele enche o crente e fala em línguas estranhas como aconteceu com os 120 crentes no Cenáculo, no Dia de Pentecoste. Embora esta convicção pentecostal seja distintiva, a Assembleia de Deus não a tem como mais importante do que as outras doutrinas (Atos 2.4).</p>
+                        <p>A fundação das Assembleias de Deus se assenta sobre as doutrinas essenciais reveladas na Bíblia Sagrada. Estas doutrinas são sintetizadas no Cremos, para facilitar a confissão de fé e conservar as doutrinas bíblicas contra as heresias.</p>
+                        <p>Cremos em um só Deus, eternamente subsistente em três pessoas: o Pai, o Filho e o Espírito Santo (Deuteronômio 6.4; Mateus 28.9; Marcos 12.29);</p>
+                        <p>Cremos na inspiração verbal e plenária da Bíblia Sagrada, única regra infalível de fé normativa para a vida e o caráter cristão (2Timóteo 3.14-17);</p>
+                        <p>Cremos no nascimento virginal de Jesus, em sua morte vicária e expiatória, em sua ressurreição corporal dentre os mortos e sua ascensão vitoriosa aos céus (Isaias 7.14; Romanos 8.34; Atos 1.9);</p>
+                        <p>Cremos na pecaminosidade do homem que o destituiu da glória de Deus, e que somente o arrependimento e a fé na obra expiatória e redentora de Jesus Cristo é que podem restaurar a Deus (Romanos 3.23; atos 3.19);</p>
+                        <p>Cremos na necessidade absoluta do novo nascimento pela fé em Cristo e pelo poder atuante do Espírito Santo e da Palavra de Deus, para tornar o homem digno do reino dos céus (João 3.3-8);</p>
+                        <p>Cremos no perdão dos pecados, na salvação presente e perfeita e na eterna justificação da alma recebidos gratuitamente de Deus pela fé no sacrifício efetuado por Jesus Cristo em nosso favor (Atos 10.43; Romanos 10.13; 3.24-26; hebreus 7.25;5.9);</p>
+                        <p>Cremos no batismo bíblico efetuado por imersão do corpo inteiro uma só vez em águas, em nome do Pai, do filho e do Espírito Santo, conforme determinou o senhor Jesus Cristo (Mateus 28.19; Romanos 6.1-6; Colossenses 2.12);</p>
+                        <p>Cremos na necessidade e na possibilidade que temos de viver vida santa mediante a obra expiatória e redentora de Jesus no Calvário, através do poder regenerador, inspirador e santificador do Espírito Santo, que nos capacita a viver como fiéis testemunhas do poder de Cristo (Hebreus 9.14; 1Pedro 1.15);</p>
+                        <p>Cremos no batismo bíblico com o Espírito Santo que nos é dado por Deus mediante a intercessão de Cristo, com a evidência inicial de falar em outras línguas, conforme a sua vontade ( Atos 1.5; 2.4; 10.44-46; 19.1-7);</p>
+                        <p>Cremos na atualidade dos dons espirituais distribuídos pelo Espírito Santo à Igreja para sua edificação, conforme a sua soberana vontade (1Coríntios 12.1-12);</p>
+                        <p>Cremos na segunda vinda pré-milenial de Cristo, em duas fases distintas. Primeira invisível ao mundo, para arrebatar a sua igreja fiel da terra, antes da grande tribulação; segunda – visível e corporal, com sua Igreja glorificada, para reinar sobre o mundo durante mil anos (1Tessalonicesses 4.16,17; 1Coríntios 15.51-54; Apocalipse 20.4; Zacarias 14.5; Judas 14);</p>
+                        <p>Cremos que todos os cristão comparecerão ante ao tribunal de Cristo, para receber a recompensa dos seus feitos em favor da causa de Cristo na terra (2Coríntios 5.10);</p>
+                        <p>Cremos no juízo vindouro que recompensará os fiéis e condenará os infiéis (Apocalipse 20.11-15);</p>
+                        <p>Cremos na vida eterna de gozo e felicidade para os fiéis e de tristeza e tormento para os infiéis (Mateus 25.46).</p>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Botão de rolagem -->
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-sort-up"></i></button>
 
         <!-- Footer -->
 		<footer class="page-footer font-small stylish-color-dark pt-4">
@@ -149,7 +121,7 @@
 		          	<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 		          	<ul class="list-unstyled">
                         <li>
-                            <a style="color: whitesmoke;" href="#">Fale conosco</a>
+                            <a style="color: whitesmoke;" href="../pages/contato.html">Fale conosco</a>
                         </li>
                         <li>
                             <a style="color: whitesmoke;" href="https://www.facebook.com/assembleiadedeusemsantaritadosapucai/">Facebook</a>
@@ -190,6 +162,7 @@
 		</footer>
 
         <!-- Inclusãoo dos arquivos necessários para o Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script>
@@ -209,10 +182,6 @@
                     document.body.scrollTop = 0; // For Safari
                     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             }
-
-            $(document).ready(function () {
-                $('.telefone').mask('(00) #0000-0000');
-            }); 
 
             AOS.init();
         </script>
