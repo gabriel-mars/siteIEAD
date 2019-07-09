@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="lib/css/app.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/52e5801784.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
 
     <body id="page-top">
@@ -14,7 +16,7 @@
                 <!-- Menu -->
                 <nav class="navbar nav-edit navbar-expand-lg fixed-top">
                     <div class="container-fluid">
-                        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo_1.png" width="50" height="45" alt="IEAD"></a>
+                        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" width="50" height="45" alt="IEAD"></a>
                         <!--
                             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                             Menu
@@ -38,10 +40,20 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">História</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Nossa história</a>
+                                        <a class="dropdown-item" href="pages/historia.html">Nossa história</a>
                                         
                                         <hr style="background-color: #6f86d6;" class="dropdown-divider">
-                                        <a class="dropdown-item" href="#">IEAD no Brasil</a>
+                                        <a class="dropdown-item" href="pages/iead.html">IEAD no Brasil</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mais</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Nosso credo</a>
+                                        <hr style="background-color: #6f86d6;" class="dropdown-divider">
+                                        <a class="dropdown-item" href="pages/contato.html">Contato</a>
+                                        <hr style="background-color: #6f86d6;" class="dropdown-divider">
+                                        <a class="dropdown-item" href="#">Facebook</a>
                                     </div>
                                 </li>
                             </ul>
@@ -55,7 +67,7 @@
                     <div class="col-md-7 col-sm-12 mx-auto">
                         <h2 style="font-family: Lobster; font-size: 4em; color: whitesmoke;">Igreja Evangélica Assembleia de Deus</h2>
                         <h4 style="font-family: Patua One; font-size:2em; color: whitesmoke;">Desde 1935 transformando vidas pelo poder da Palavra de Deus!</h4>
-                        <img src="img/logo_1.png" width="200" height="200" alt="Logo" />
+                        <img style="margin-top: 2em; padding-bottom: none;" src="img/logo.png" width="300" height="300" alt="Logo" />
                         <h5 style="font-family: Patua One; color: whitesmoke;">Santa Rita do Sapucaí - MG</h5>
                     </div>
                 </div>
@@ -63,7 +75,7 @@
         </header>
 
         <section class="section-1" id="missao">
-            <div class="container text-center">
+            <div class="container text-center" data-aos="fade-right">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="pray">
@@ -174,9 +186,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-7 col-sm-12 mx-auto">
-                        <div class="card text-center" style="padding-top: none; margin-left:15%; max-width: 550px;">
+                <div class="row col-md-7 col-sm-12 mx-auto">
+                    <div class="col-md-7 col-sm-12 mx-auto" data-aos="zoom-in">
+                        <div class="card text-center" style="padding-top: none; max-width: 550px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
                                     <img src="img/ilton.jpg" class="card-img" alt="Pastor Ilton Golçalves">
@@ -206,20 +218,7 @@
                         
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body">
-                                    Gonçalo Borges Lemos (1.º vice-presidente), Paulo César Barbosa (secretário), Hamilton Tomé, Célio Raimundo Rodrigues, Everton Isac Gonçalves, José Benedito Chagas, Benedito Ricardo Ribeiro.
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Evangelistas
-                                </button>
-                            </h2>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                            <div class="card-body">
-                                    José Benedito dos Santos
+                                    Gonçalo Borges Lemos (1.º vice-presidente), Paulo César Barbosa (secretário), Hamilton Tomé, Célio Raimundo Rodrigues, Everton Isac Gonçalves, José Benedito Chagas e Benedito Ricardo Ribeiro.
                             </div>
                         </div>
                         <div class="card">
@@ -232,7 +231,7 @@
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
-                                    Joel Job da Silva (2.º vice-presidente), Joaquim Vitor dos Santos, Ananias Gentil, José Batista, Paulo Sergio de Souza, André Luis Lemes Simões, Lafaiete Donizete Ribeiro, Elder Felizardo.
+                                    Joel Job da Silva (2.º vice-presidente), Joaquim Vitor dos Santos, Ananias Gentil, José Batista, Paulo Sergio de Souza, André Luis Lemes Simões, Lafaiete Donizete Ribeiro e Elder Felizardo.
                             </div>
                         </div>
                         <div class="card">
@@ -245,7 +244,7 @@
                             </div>
                             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Sinésio Timóteo, João Batista do Carmo, Pedro Soares Miranda, Carlos Gomes, Joaquim Paulino da Silva, Marcos Ferreira da Silva, Marcelo de Paula, Diones Batista, Tiago Ramos, Vitor Fidelis, Aluizio dos Santos, Dicson Paul Garcia, Josué da Silva, José Sebastião Gonçalves, Davidson Paul Garcia, José Antonio, Vanderlei Nogueira, Washington Luiz de Miranda Júnior e Cremilson Ribeiro de Castro.
+                                    Sinésio Timóteo, João Batista do Carmo, Pedro Soares Miranda, Carlos Gomes, Joaquim Paulino da Silva, Marcos Ferreira da Silva, Diones Batista, Tiago Ramos, Vitor Fidelis, Dicson Paul Garcia, Josué da Silva, José Sebastião Gonçalves, Davidson Paul Garcia, José Antonio, Vanderlei Nogueira e Cremilson Ribeiro de Castro.
                                 </div>
                             </div>
                         </div>
@@ -261,7 +260,14 @@
                     <div class="col-xl-6 mx-auto text-center">
                         <div class="section-title mb-100">
                            <h4>Onde estamos</h4>
-                           <p>Atualmente estamos com trabalhos em seis congregações espalhadas pela cidade e também nosso templo sede.</p>
+                           <p>Atualmente estamos com trabalhos em cinco congregações espalhadas pela cidade, três na zona rural e também nosso templo sede.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 mx-auto text-center">
+                        <div class="section-title mb-100">
+                           <h5>Zona urbana</h5>
                         </div>
                     </div>
                 </div>
@@ -270,7 +276,7 @@
                         <div class="single-service">
                             <i class="fas fa-place-of-worship"></i>
                             <h3>Congregação Eletrônica</h3>
-                            <p>Rua Godofredo de Luna, 15 - Jardim Santo Antônio.</p>
+                            <p>Pracinha da Criança, 15 - Jardim Santo Antônio.</p>
                             <p>Pr. Ricardo</p>
                         </div>
                     </div>
@@ -279,14 +285,14 @@
                             <i class="fas fa-place-of-worship"></i>
                             <h3>Templo Sede</h3>
                             <p>Rua Oswaldo Campos do Amaral, 877 - Fernandes.</p>
-                            <p>Pr. Ilton Golçalves - Presidente</p>
+                            <p><u>Ilton Golçalves - Presidente</u></p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-service">
                             <i class="fas fa-place-of-worship"></i>
                             <h3>Congregação Rua Nova</h3>
-                            <p>Rua Nova de Luna,  - Bairro Rua Nova.</p>
+                            <p>Rua Nova, 102 - Bairro Rua Nova.</p>
                             </br>
                             <p>Pr. Everton</p>
                         </div>
@@ -294,26 +300,57 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-service">
                             <i class="fas fa-place-of-worship"></i>
-                            <h3>Congregação Eletrônica</h3>
-                            <p>Rua Godofredo de Luna, 15 - Jardim Santo Antônio.</p>
-                            <p>Pr. Ricardo</p>
+                            <h3>Congregação São Benedito</h3>
+                            <p>Rua  Daniel Carlos Magalhães, 47 - São Benedito.</p>
+                            <p>Pb. Joel</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-service">
                             <i class="fas fa-place-of-worship"></i>
-                            <h3>Templo Sede</h3>
-                            <p>Rua Oswaldo Campos do Amaral, 877 - Fernandes.</p>
-                            <p>Pr. Ilton Golçalves - Presidente</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-service">
-                            <i class="fas fa-place-of-worship"></i>
-                            <h3>Congregação Rua Nova</h3>
-                            <p>Rua Nova de Luna,  - Bairro Rua Nova.</p>
+                            <h3>Congregação Pedro Sancho 1</h3>
+                            <p>Rua 23, 195 - Pedro Sancho Vilela.</p>
                             </br>
-                            <p>Pr. Everton</p>
+                            <p>Pr. José Benedito</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <i class="fas fa-place-of-worship"></i>
+                            <h3>Congregação Pedro Sancho 2</h3>
+                            <p>Rua Prof. Yone Grilo, 10 - Pedro Sancho Vilela.</p>
+                            </br>
+                            <p>Pb. Elder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 mx-auto text-center">
+                        <div class="section-title mb-100">
+                           <h5>Zona rural</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <i class="fas fa-place-of-worship"></i>
+                            <h3>Congregação bairro dos Pinhais</h3>
+                            <p>Pb. Joel</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <i class="fas fa-place-of-worship"></i>
+                            <h3>Congregação Fazenda São Joaquim</h3>
+                            <p>Pr. Celio</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <i class="fas fa-place-of-worship"></i>
+                            <h3>Congregação Sitio São Paulo</h3>
+                            <p>Pr. Celio</p>
                         </div>
                     </div>
                 </div>
@@ -345,8 +382,11 @@
 		          	<!-- Links -->
 		          	<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 		          	<ul class="list-unstyled">
-                        <li class="list-inline-item">
-                            <a style="color: whitesmoke;" href="contato.html">Fale conosco</a>
+                        <li>
+                            <a style="color: whitesmoke;" href="pages/contato.html">Fale conosco</a>
+                        </li>
+                        <li>
+                            <a style="color: whitesmoke;" href="https://www.facebook.com/assembleiadedeusemsantaritadosapucai/">Facebook</a>
                         </li>
 		          	</ul>
 		        </div>
@@ -404,6 +444,8 @@
 			  	document.body.scrollTop = 0; // For Safari
 			  	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 			}
+
+            AOS.init();
         </script>
     </body>
 </html>
