@@ -15,6 +15,7 @@ section {
     --Lobster: "lobster", cursive;
     --light-black: #2e2c2caf;
     --light-gray: rgba(255, 255, 255, 0.877);
+    --bggradient: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 70%);
 }
 
 header {
@@ -296,36 +297,6 @@ header .container .col-md-7 h1 {
     justify-content: center;
 }
 
-
-/* Section Team */
-
-.section-4 {
-    background: #6f86d6;
-    background: var(--bggradient);
-}
-
-.section-4 .container h1 {
-    font-size: 6vmin;
-    padding-top: 14vmin;
-}
-
-.section-4 .card {
-    width: 22em;
-    margin-top: 10vmin;
-}
-
-.section-4 .card .card-text {
-    padding: 0.5em;
-}
-
-.section-4 .card-body>a {
-    font-size: 1.5em;
-}
-
-.section-4 .carousel-item {
-    padding-left: 3rem;
-}
-
 .border-radius {
     border-radius: 340px;
     width: 80%;
@@ -397,4 +368,14 @@ header .container .col-md-7 h1 {
 footer {
     background: #333;
     color: white;
+}
+
+#departamentos {
+    padding-bottom: 5em;
+    background: var(--bggradient);
+}
+
+.banner {
+    border: none;
+    border-radius: 40px 10px;
 }
