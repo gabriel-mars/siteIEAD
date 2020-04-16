@@ -14,18 +14,18 @@ section {
     --Patua: "Patua One", cursive;
     --Lobster: "lobster", cursive;
     --light-black: #2e2c2caf;
-    /*--bggradient: linear-gradient(to bottom, #6f86d6, #48c6ef);*/
-    --bggradient: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 62%);
     --light-gray: rgba(255, 255, 255, 0.877);
 }
 
 header {
-    background: #6f86d6;
-    background: var(--bggradient);
+    background: #333;
+    background-image: url("../../img/wallpaper.jpg");
+    background-position: center top;
+	background-size:cover;
 }
 
 .nav-edit {
-    background-color: rgb(255, 255, 255, 0.80);
+    background-color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
 }
 
@@ -41,8 +41,13 @@ header .navbar-brand {
     padding-left: 8rem;
 }
 
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
 header .nav-link:hover {
-    color: #6f86d6;
+    color: rgb(200, 228, 245);
 }
 
 header .row .col-md-7 {
@@ -56,12 +61,6 @@ header .row .col-md-5 {
 
 header .row .col-md-5 img {
     width: 90%;
-}
-
-header {
-    background: #ff512f;
-    /* fallback for old browsers */
-    background: var(--bggradient);
 }
 
 header .container .col-md-7 {
@@ -78,7 +77,6 @@ header .container .col-md-7 h1 {
     font-weight: bold;
     padding: 0.1em 0em;
 }
-
 
 /* Botão de rolagem */
 
@@ -97,7 +95,7 @@ header .container .col-md-7 h1 {
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: rgb(0, 0, 0);
+    background-color: #333;
     /* Set a background color */
     color: white;
     /* Text color */
@@ -112,10 +110,9 @@ header .container .col-md-7 h1 {
 }
 
 #myBtn:hover {
-    background-color: #4F4F4F;
+    background-color: rgb(65, 64, 64);
     /* Add a dark-grey background on hover */
 }
-
 
 /* Customização dos cards de apresentação */
 
@@ -191,7 +188,7 @@ header .container .col-md-7 h1 {
     position: absolute;
     width: 0;
     height: 0;
-    background-color: #30ADF2;
+    background-color: #333;
     left: 0;
     top: 0;
     content: "";
@@ -203,7 +200,7 @@ header .container .col-md-7 h1 {
     position: absolute;
     width: 0;
     height: 0;
-    background-color: #30ADF2;
+    background-color: #333;
     right: 0;
     bottom: 0;
     content: "";
@@ -236,9 +233,9 @@ header .container .col-md-7 h1 {
 }
 
 .single-service:hover i.fa {
-    background-color: #30ADF2;
+    background-color: #333;
     color: #fff;
-    border-color: #30ADF2;
+    border-color: #333;
     border-radius: 0;
 }
 
@@ -398,6 +395,6 @@ header .container .col-md-7 h1 {
 }
 
 footer {
-    background: #000000;
+    background: #333;
     color: white;
 }
