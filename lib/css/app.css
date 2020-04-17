@@ -379,3 +379,10 @@ footer {
     border: none;
     border-radius: 40px 10px;
 }
+
+.legenda {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    border: none;
+    border-radius: 40px 10px;
+}
