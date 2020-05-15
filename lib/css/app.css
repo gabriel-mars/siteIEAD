@@ -252,10 +252,6 @@ header .container .col-md-7 h1 {
     line-height: 1.8;
 }
 
-.section-1 {
-    padding: 20vmin 0vmin;
-}
-
 .section-1 .row .col-md-6 .pray img {
     opacity: 0.8;
     width: 80%;
@@ -385,4 +381,39 @@ footer {
     font-weight: bold;
     border: none;
     border-radius: 40px 10px;
+}
+
+.projects-section {
+    padding: 10rem 0;
+}
+
+.projects-section .featured-text {
+    padding: 2rem;
+}
+
+@media (min-width: 992px) {
+    .projects-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #0c0c0c;
+    }
+}
+
+.projects-section .project-text {
+    padding: 3rem;
+    font-size: 90%;
+}
+
+@media (min-width: 992px) {
+    .projects-section .project-text {
+        padding: 5rem;
+    }
+    .projects-section .project-text hr {
+        border-color: #64a19d;
+        border-width: 0.25rem;
+        width: 30%;
+    }
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
 }
